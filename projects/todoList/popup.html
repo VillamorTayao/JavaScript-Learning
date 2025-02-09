@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .popup{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        animation: 1s ease-in-out dropDown; /* Smooth drop animation */
+    }
+
+    @keyframes dropDown {
+        from {
+            top: -100%;
+        }
+        to {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+
+    .window{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 15px;
+        width: 500px;
+        background-color: rgb(100, 133, 226);
+        border-radius: 20px;
+    }
+
+    .window button{
+        width: 40%;
+        max-width: 100%;
+        padding: 17px 0;
+        border: none;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+    }
+    .window button:hover{
+        opacity: 0.3
+    }
+
+</style>
+<body>
+    <div class="popup">
+        <div class="window">
+            <h1>Hello!</h1>
+            <h3>Welcome to my ToDo List name "Mamaya Nalang" !</h3>
+            <h3>This is my final project for my beginner projects in Web Developement</h3>
+            <h3>You are welcome to replicate this project of mine!</h3>
+            <h3>The source code is on my GitHub 😊</h3>
+            <div>
+                <button>Let's Get Started!</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="input-box" onkeydown="hitKey();">
+    <button onclick="change();">submit</button>
+    <p class="result"></p>
+    <script>
+        const show = document.querySelector('.input-box');
+
+        function change(){
+            document.querySelector('.result').innerHTML = `Your name is: ${show.value}`;
+        }
+
+        function hitKey(){
+            if (event.key === 'Enter') {
+                document.querySelector('.result').innerHTML = `Your name is: ${show.value}`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!-- Cart Quantity but with added changes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+<body>
+    <p>Cart Quantity</p>
+    <button onclick="console.log(`Cart Quantity: ${cartQuantity }`);">Show Quantity</button>
+    <button onclick="addToCart(1);">Add to Cart</button>
+    <button onclick="addToCart(2);">+2</button>
+    <button onclick="addToCart(3);">+3</button>
+    <button onclick="addToCart(4);">+4</button>
+    <button onclick="addToCart(5);">+5</button>
+    <button onclick="addToCart('reset')">Reset Cart</button>
+    <button onclick="removeFromCart(-1);">Remove from Cart</button>
+    <button onclick="removeFromCart(-2);">-2</button>
+    <button onclick="removeFromCart(-3);">-3</button>
+
+    <script>
+        let cartQuantity = 0;
+
+        function addToCart(number){
+            if (number === 1){
+                cartQuantity ++;
+            } else if (number === 2) {
+                cartQuantity +=2;
+            } else if (number === 3) {
+                cartQuantity +=3;
+            } else if (number === 4) {
+                cartQuantity +=4;
+            } else if (number === 5) {
+                cartQuantity +=5;
+            } else if (number === 'reset'){
+                console.log('Cart Reset');
+                cartQuantity  = 0;
+            }
+
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }
+
+        function removeFromCart(number){
+            if (number === -1) {
+                cartQuantity--;
+            } else if (number === -2) {
+                cartQuantity-=2;
+            } else if (number === -3) {
+                cartQuantity-=3;
+            }
+
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }
+    </script>
+</body>
+</html>

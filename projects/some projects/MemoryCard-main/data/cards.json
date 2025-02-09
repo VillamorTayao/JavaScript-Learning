@@ -1,0 +1,38 @@
+[
+    {
+        "image": "./assets/Meme1.gif",
+        "name": "Meme1"
+    },
+    {
+        "image": "./assets/Meme2.gif",
+        "name": "Meme2"
+    },
+    {
+        "image": "./assets/Meme3.gif",
+        "name": "Meme3"
+    },
+    {
+        "image": "./assets/Meme4.gif",
+        "name": "Meme4"
+    },
+    {
+        "image": "./assets/Meme5.gif",
+        "name": "Meme5"
+    },
+    {
+        "image": "./assets/Meme6.gif",
+        "name": "Meme6"
+    },
+    {
+        "image": "./assets/Meme7.gif",
+        "name": "Meme7"
+    },
+    {
+        "image": "./assets/Meme8.gif",
+        "name": "Meme8"
+    },
+    {
+        "image": "./assets/Meme9.gif",
+        "name": "Meme9"
+    }
+]

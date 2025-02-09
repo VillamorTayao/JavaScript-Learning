@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //11g
+        const container1 = [1,2,3];
+        const container2 = [];
+
+        for(let i = 0; i < container1.length; i++){
+            container2.push(container1[i]+1);
+        }
+        console.log(container2);
+
+        //11h
+        function addOne(array){
+            const container = []
+            for(let i = 0; i < array.length; i++){
+                container.push(array[i]+1);
+            }
+
+            return container;
+        }
+        console.log(addOne([1,2,3]));
+        console.log(addOne([-2,-1,0,99]));
+    </script>
+</body>
+</html>

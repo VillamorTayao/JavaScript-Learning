@@ -1,0 +1,149 @@
+body{
+    background-image: linear-gradient(45deg, green, lightblue);
+    background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightblue;
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(65, 65, 65, 0.5);
+    width: 600px;
+}
+.visible{
+    filter: blur(10px);
+    transition: filter 0.5s;
+}
+
+.show-result, .inputs{
+    display: grid;
+    grid-template-columns: 250px 220px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    box-sizing: border-box;
+}
+
+.inputs input{
+    padding: 8px 15px;
+    font-size: 16px;
+    align-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline-color: red;
+    outline-width: 1px;
+}
+
+.inputs button{
+    background-color: green;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.inputs button:hover{
+    opacity: 0.5;
+}
+
+.show-result{
+    display: grid;
+    grid-template-columns: inherit;
+    column-gap: 10px;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.animate{
+    border: 1px solid green;
+    visibility: visible;
+    border-radius: 5px;
+    animation: 0.6s ease-in animate;
+}
+
+.show-result button{
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-size: 18px;
+}
+
+.result-style{
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+  
+@keyframes animate{
+    0% {transform: translate(-30px) ;opacity: 0;}
+    50% {opacity: 0.5};
+    100% {opacity: 1}
+}
+
+
+
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    animation: 1s ease-in-out dropDown; /* Smooth drop animation */
+}
+
+@keyframes dropDown {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+.window{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    width: 500px;
+    background-color: rgb(100, 133, 226);
+    border-radius: 20px;
+}
+
+.window button{
+    width: 40%;
+    max-width: 100%;
+    padding: 17px 0;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.window button:hover{
+    opacity: 0.3
+}
+
+.window-hidden{
+    visibility: hidden;
+}

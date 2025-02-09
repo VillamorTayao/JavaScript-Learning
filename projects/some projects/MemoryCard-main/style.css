@@ -1,0 +1,391 @@
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #070606;
+    background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M82.42 180h-1.415L0 98.995v-2.827L6.167 90 0 83.833V81.004L81.005 0h2.827L90 6.167 96.167 0H98.996L180 81.005v2.827L173.833 90 180 96.167V98.996L98.995 180h-2.827L90 173.833 83.833 180H82.42zm0-1.414L1.413 97.58 8.994 90l-7.58-7.58L82.42 1.413 90 8.994l7.58-7.58 81.006 81.005-7.58 7.58 7.58 7.58-81.005 81.006-7.58-7.58-7.58 7.58zM175.196 0h-25.832c1.033 2.924 2.616 5.59 4.625 7.868C152.145 9.682 151 12.208 151 15c0 5.523 4.477 10 10 10 1.657 0 3 1.343 3 3v4h16V0h-4.803c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6s-6-2.686-6-6c0-1.093.292-2.117.803-3h10.394-13.685C161.18.938 161 1.948 161 3v4c-4.418 0-8 3.582-8 8s3.582 8 8 8c2.76 0 5 2.24 5 5v2h4v-4h2v4h4v-4h2v4h2V0h-4.803zm-15.783 0c-.27.954-.414 1.96-.414 3v2.2c-1.25.254-2.414.74-3.447 1.412-1.716-1.93-3.098-4.164-4.054-6.612h7.914zM180 17h-3l2.143-10H180v10zm-30.635 163c-.884-2.502-1.365-5.195-1.365-8 0-13.255 10.748-24 23.99-24H180v32h-30.635zm12.147 0c.5-1.416 1.345-2.67 2.434-3.66l-1.345-1.48c-1.498 1.364-2.62 3.136-3.186 5.14H151.5c-.97-2.48-1.5-5.177-1.5-8 0-12.15 9.84-22 22-22h8v30h-18.488zm13.685 0c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 148h8.01C21.26 148 32 158.742 32 172c0 2.805-.48 5.498-1.366 8H0v-32zm0 2h8c12.15 0 22 9.847 22 22 0 2.822-.53 5.52-1.5 8h-7.914c-.567-2.004-1.688-3.776-3.187-5.14l-1.346 1.48c1.09.99 1.933 2.244 2.434 3.66H0v-30zm15.197 30c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 32h16v-4c0-1.657 1.343-3 3-3 5.523 0 10-4.477 10-10 0-2.794-1.145-5.32-2.992-7.134C28.018 5.586 29.6 2.924 30.634 0H0v32zm0-2h2v-4h2v4h4v-4h2v4h4v-2c0-2.76 2.24-5 5-5 4.418 0 8-3.582 8-8s-3.582-8-8-8V3c0-1.052-.18-2.062-.512-3H0v30zM28.5 0c-.954 2.448-2.335 4.683-4.05 6.613-1.035-.672-2.2-1.16-3.45-1.413V3c0-1.04-.144-2.046-.414-3H28.5zM0 17h3L.857 7H0v10zM15.197 0c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6S4 6.314 4 3c0-1.093.292-2.117.803-3h10.394zM109 115c-1.657 0-3 1.343-3 3v4H74v-4c0-1.657-1.343-3-3-3-5.523 0-10-4.477-10-10 0-2.793 1.145-5.318 2.99-7.132C60.262 93.638 58 88.084 58 82c0-13.255 10.748-24 23.99-24h16.02C111.26 58 122 68.742 122 82c0 6.082-2.263 11.636-5.992 15.866C117.855 99.68 119 102.206 119 105c0 5.523-4.477 10-10 10zm0-2c-2.76 0-5 2.24-5 5v2h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-2c0-2.76-2.24-5-5-5-4.418 0-8-3.582-8-8s3.582-8 8-8v-4c0-2.64 1.136-5.013 2.946-6.66L72.6 84.86C70.39 86.874 69 89.775 69 93v2.2c-1.25.254-2.414.74-3.447 1.412C62.098 92.727 60 87.61 60 82c0-12.15 9.84-22 22-22h16c12.15 0 22 9.847 22 22 0 5.61-2.097 10.728-5.55 14.613-1.035-.672-2.2-1.16-3.45-1.413V93c0-3.226-1.39-6.127-3.6-8.14l-1.346 1.48C107.864 87.987 109 90.36 109 93v4c4.418 0 8 3.582 8 8s-3.582 8-8 8zM90.857 97L93 107h-6l2.143-10h1.714zM80 99c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm20 0c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6z' fill='%23fff000' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");    color: #ffe600;
+    font-family: 'Aboreto';
+    font-weight: 900;
+    color: #ffe600;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    font: 50px;
+}
+
+.display{
+    padding: 3px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    margin: 3px;
+    padding: 2px 25px 2px 2px;
+    font-size: 30px;
+}
+
+.time {
+    margin: 3px;
+    padding: 2px 2px 2px 25px;
+    font-size: 30px;
+    text-transform: lowercase;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+.actions button{
+    padding: 8px 16px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #0cce56;
+    color: #ffffff;
+    outline: none;
+    font-family: 'Aboreto';
+}
+
+.actions button:hover{
+    background-color: #49d17b;
+    transform: scale(1.1);
+}
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    grid-gap: 16px;
+    grid-template-columns: repeat(6, 140px);
+    grid-template-rows: repeat(2, calc(140px / 2 * 3));
+}
+
+.card{
+    height: calc(140px / 2 * 3);
+    width: 140px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all .5s ease-in-out;
+}
+
+.front-image {
+    width: 60px;
+    height: 60px;
+}
+
+.card.flipped{
+    transform: rotateY(180deg);
+}
+
+.front,.back{
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card .front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);    
+}
+
+.card .back {
+background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='50' height='50' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240,6.7%,17.6%,1)'/><path d='M25 3.95L22.3 9.2c-1.45 2.75-.95 6.15 1.25 8.35L25 19l1.45-1.45c2.15-2.2 2.65-5.6 1.25-8.35zm0 7.5c.85 0 1.5.7 1.5 1.5 0 .85-.65 1.5-1.5 1.5s-1.5-.7-1.5-1.5c0-.85.65-1.5 1.5-1.5zm-13.1.45l.75 5.6c.15 1.15 1 2.05 2.1 2.35l6.8 1.7-1.7-6.8c-.25-1.1-1.2-1.95-2.35-2.1zm26.2 0l-5.6.75c-1.15.15-2.05 1-2.35 2.1l-1.7 6.8 6.8-1.7c1.1-.25 1.95-1.2 2.1-2.35zm-21.4 3.4c.75 0 1.4.6 1.4 1.4 0 .4-.15.75-.4 1s-.6.4-1 .4c-.75 0-1.4-.6-1.4-1.4 0-.35.15-.75.4-1s.6-.4 1-.4zm16.55 0c.4 0 .75.15 1 .4s.4.6.4 1c0 .75-.6 1.4-1.4 1.4-.4 0-.75-.15-1-.4s-.4-.6-.4-1c0-.75.6-1.4 1.4-1.4zm4.28 6.179a7.102 7.102 0 00-5.08 2.072L31 25l1.45 1.45c2.2 2.15 5.6 2.65 8.35 1.25l5.25-2.7-5.25-2.7a7.126 7.126 0 00-3.27-.821zm-25.06.035a7.267 7.267 0 00-3.27.787L3.95 25l5.25 2.7c2.75 1.45 6.15.95 8.35-1.25L19 25l-1.45-1.45c-1.374-1.343-3.218-2.043-5.08-2.036zm12.53.685c-.75 0-1.45.301-1.95.801s-.8 1.2-.8 1.95.3 1.45.8 1.95 1.2.8 1.95.8 1.45-.3 1.95-.8.8-1.2.8-1.95-.3-1.45-.8-1.95-1.2-.8-1.95-.8zm12 1.25c.85 0 1.5.65 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.65-1.5-1.5.7-1.5 1.5-1.5zM13 23.5c.8 0 1.5.65 1.5 1.5s-.7 1.5-1.5 1.5c-.85 0-1.5-.65-1.5-1.5s.7-1.5 1.5-1.5zm8.55 4.95l-6.8 1.7c-1.1.25-1.95 1.2-2.1 2.35l-.75 5.6 5.6-.75c1.15-.15 2.05-1 2.35-2.1zm6.9 0l1.7 6.8c.25 1.1 1.2 1.95 2.35 2.1l5.6.7-.75-5.6c-.15-1.15-1-2.05-2.1-2.35zM25 31l-1.45 1.45c-2.15 2.2-2.65 5.6-1.25 8.35l2.7 5.25 2.7-5.25c1.45-2.75.95-6.15-1.25-8.35zm8.3.85c.75 0 1.4.6 1.4 1.4 0 .4-.15.75-.4 1s-.6.4-1 .4c-.75 0-1.4-.6-1.4-1.4 0-.4.15-.75.4-1s.6-.4 1-.4zm-16.55.05c.4 0 .75.15 1 .4s.4.6.4 1c0 .75-.6 1.4-1.4 1.4-.4 0-.75-.2-1-.4-.25-.25-.4-.6-.4-1 0-.75.6-1.4 1.4-1.4zM25 35.5c.85 0 1.5.7 1.5 1.5 0 .85-.65 1.5-1.5 1.5s-1.5-.7-1.5-1.5.65-1.5 1.5-1.5z'  stroke-width='1' stroke='none' fill='hsla(47,80.9%,61%,1)'/><path d='M1 0c.5.9 1.45 1.5 2.55 1.5C4.65 1.5 5.6.9 6.1 0zm42.9 0c.5.9 1.45 1.5 2.55 1.5C47.55 1.5 48.5.9 49 0zM0 1v5.1c.9-.5 1.5-1.45 1.5-2.55C1.5 2.45.9 1.5 0 1zm50 0c-.9.5-1.5 1.45-1.5 2.55 0 1.1.6 2.05 1.5 2.55zM0 43.9V49c.9-.5 1.5-1.45 1.5-2.55 0-1.1-.6-2.05-1.5-2.55zm50 0c-.9.5-1.5 1.45-1.5 2.55 0 1.1.6 2.05 1.5 2.55zM3.55 48.5c-1.1 0-2.05.6-2.55 1.5h5.1c-.5-.9-1.45-1.5-2.55-1.5zm42.9 0c-1.1 0-2.05.6-2.55 1.5H49c-.5-.9-1.45-1.5-2.55-1.5z'  stroke-width='1' stroke='none' fill='hsla(4.1,89.6%,58.4%,1)'/><path d='M11.7 0A28.002 28.002 0 00.05 11.65v1.45c1.3-2.8 3.1-5.4 5.4-7.65A27.64 27.64 0 0113.15 0H11.7zm25.2.05c2.8 1.3 5.4 3.1 7.65 5.4a27.64 27.64 0 015.45 7.7V11.7A28.002 28.002 0 0038.35.05H36.9zm-16.6.9a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm9.4 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zM17.65 3.6a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm14.7 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm-17.4 2.65a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm20.1 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zM12.3 8.9a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm25.4 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zM9.45 11.75a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm31.1 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zM6.8 14.4a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm36.4 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zM4.15 17.05a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm41.7 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zM1.5 19.75a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm47 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm-47 9.4a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm47 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zM4.15 31.8a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm41.7 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zM6.8 34.45a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm36.4 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zM0 36.85v1.45a28.002 28.002 0 0011.65 11.65h1.45c-2.8-1.3-5.4-3.15-7.65-5.4A27.64 27.64 0 010 36.85zm49.95 0a25.563 25.563 0 01-5.4 7.7 27.64 27.64 0 01-7.7 5.45h1.45a28.002 28.002 0 0011.65-11.65v-1.5zm-40.5.3a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm31.1 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm-28.25 2.8a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm25.4 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm-22.75 2.7a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm20.1 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm-17.4 2.65a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm14.7 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zM20.3 47.95a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55zm9.4 0a.55.55 0 00-.55.55.55.55 0 00.55.55.55.55 0 00.55-.55.55.55 0 00-.55-.55z'  stroke-width='1' stroke='none' fill='hsla(186.8,100%,41.6%,1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");    background-size: cover;
+    backface-visibility: hidden;
+}
+
+.card .front {
+    transform: rotateY(180deg);
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: modal-entry 0.5s ease-out;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.modal-content button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+.modal-content button:active {
+    transform: scale(1);
+}
+
+@keyframes modal-entry {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.try-again .modal-content {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.try-again h2 {
+    color: #fff;
+}
+
+.try-again button {
+    background-color: #c0392b;
+}
+
+.try-again button:hover {
+    background-color: #a93226;
+}
+
+.you-win .modal-content {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.you-win h2 {
+    color: #fff;
+}
+
+.you-win button {
+    background-color: #27ae60;
+}
+
+.you-win button:hover {
+    background-color: #1e8449;
+}
+
+@keyframes confetti {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(720deg);
+        opacity: 0;
+        top: 100vh;
+    }
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6347;
+    animation: confetti 3s ease-out infinite;
+}
+
+.confetti:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.confetti:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.confetti:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.confetti:nth-child(4) {
+    background-color: #f1c40f;
+}
+
+.confetti:nth-child(5) {
+    background-color: #3498db;
+}
+
+.confetti:nth-child(6) {
+    background-color: #9b59b6;
+}
+
+
+.intro-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    backdrop-filter: blur(10px); 
+}
+
+.intro-modal.modal-show {
+    opacity: 1;
+}
+
+.intro-modal .modal-content {
+    background: linear-gradient(145deg, #FFEB3B, #F57F17); 
+    color: #ffffff; 
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    animation: scaleUp 0.5s forwards; 
+}
+
+.intro-modal h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-family: 'Press Start 2P', cursive;
+    color: #000; 
+}
+
+.intro-modal p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000; 
+}
+
+.intro-modal ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s; 
+    text-align: left;
+    color: #000; 
+}
+
+.intro-modal ul li {
+    margin-bottom: 12px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.intro-modal ul li:nth-child(1) {
+    animation-delay: 1s; 
+}
+
+.intro-modal ul li:nth-child(2) {
+    animation-delay: 1.3s;
+}
+
+.intro-modal ul li:nth-child(3) {
+    animation-delay: 1.6s;
+}
+
+.intro-modal ul li:nth-child(4) {
+    animation-delay: 1.9s;
+}
+
+/* Green Button Styles */
+.intro-modal button {
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #4CAF50; 
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: buttonAppear 1s forwards;
+    animation-delay: 2.2s; 
+}
+
+.intro-modal button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes buttonAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

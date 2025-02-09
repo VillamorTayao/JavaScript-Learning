@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .gaming-btn{
+            background-color: red;
+        }
+        .is-toggled{
+            background-color: blue;
+        }
+    </style>
+
+    <!-- 10g -->
+    <button class="btn btn1" onclick="toggleClick('.btn1');">Gaming</button>
+    <button class="btn btn2" onclick="toggleClick('.btn2');">Gaming</button>
+    <button class="btn btn3" onclick="toggleClick('.btn3');">Gaming</button>
+    <script>
+        
+        function toggleClick(selectedClass){
+            const button = document.querySelector(selectedClass);
+
+            if (!button.classList.contains('is-toggled')){
+                turnOffPastBtn();
+                button.classList.add('is-toggled');
+            } else {
+                button.classList.remove('is-toggled');
+            }
+
+        }
+
+        function turnOffPastBtn(){
+            const prevBtn = document.querySelector('.is-toggled');
+
+            if (prevBtn){
+                prevBtn.classList.remove('is-toggled');
+            }
+        }
+
+
+
+
+        // function onlyOneButtonClicked2(){
+
+        //     if (!button2.classList.contains('is-toggled')){
+        //         button2.classList.add('is-toggled');
+        //     } else {
+        //         button2.classList.remove('is-toggled');
+        //     }
+        // }
+
+        // function onlyOneButtonClicked3(){
+
+        //     if (!button3.classList.contains('is-toggled')){
+        //         button3.classList.add('is-toggled');
+        //     } else {
+        //         button3.classList.remove('is-toggled');
+        //     }
+        // }
+
+    </script>
+</body>
+</html>

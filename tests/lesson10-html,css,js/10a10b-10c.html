@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .add-to-cart-btn{
+            background-color: rgb(255, 216, 20);
+            border: none;
+            padding: 5px 30px 5px 30px;
+            border-radius: 20px;
+        }
+        .btn{
+            padding: 8px 10px 8px 10px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+        }
+        .request{
+            background-color: black;
+            color: white;
+        }
+        .sched{
+            background-color: rgb(230, 230, 230);
+        }
+    </style>
+    <!-- 10a -->
+    <button class="add-to-cart-btn" type="button">Add to Cart</button>
+
+    <!-- 10b -->
+    <button class="request btn">Request now</button>
+    <button class="sched btn">Schedule for later</button>
+
+    <!-- 10c -->
+    <button class="js-button test">Test</button>
+     <script>
+        let result = document.querySelector('.test').classList.contains('js-button');
+        console.log(result);
+     </script>
+</body>
+</html>

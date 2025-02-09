@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-size: 50px;
+}
+img{
+    width: 70px;
+}
+button{
+    background-color: transparent;
+    padding: 40px 40px 40px 40px;
+
+    align-items: center;
+    vertical-align: middle;
+
+    border: 0.7px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: opacity 0.8s;
+}
+button:hover{
+    opacity: 0.5;
+}
+
+.rock-paper-scissors-body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 7vh;
+}
+.main{
+    position: relative;
+    border: 10px solid red;
+    border-radius: 20px;
+    padding: 10px 40px 30px 40px;
+    width: 750px;
+}
+.reset-btn{
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+.auto-play{
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+
+

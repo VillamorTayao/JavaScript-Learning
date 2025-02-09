@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function convertLenght(length, from, to){
+            if (from === 'km' && to === 'miles') {
+                length *= 0.62;
+            } else if (from === 'miles' && to === 'km') {
+                length *= 1.61; 
+            } else if (from === 'km' && to === 'km') {
+                return length;
+            } else if (from === 'miles' && to === 'ft') {
+                length *= 5280;
+            } else if (from === 'km' && to === 'ft') {
+                length *= 3280.8398950131;
+                return Math.ceil(length);
+            } else {
+                return `Invalid unit used!`;
+            }
+
+            return Math.round(length);
+        }
+
+        // 7g => miles to km / km to miles
+        console.log(convertLenght(50, 'miles', 'km'));
+        console.log(convertLenght(32, 'km', 'miles'));
+        console.log(convertLenght(50, 'km', 'km'));
+
+        // 7h => miles to ft / miles to km
+        console.log(convertLenght(5, 'miles', 'km'));
+        console.log(convertLenght(5, 'miles', 'ft'));
+        console.log(convertLenght(5, 'km', 'ft'));
+
+        // 7i => if invalid unit is used
+        console.log(convertLenght(5, 'lbs', 'lbs'));
+    </script>
+</body>
+</html>

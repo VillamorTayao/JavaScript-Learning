@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .gaming-btn{
+            background-color: red;
+        }
+        .is-toggled{
+            background-color: blue;
+        }
+    </style>
+    <!-- 10d -->
+    <button class="gaming-btn" onclick="gamingBtn();">Gaming</button>
+
+    <br \>
+    <br \>
+
+    <!-- 10e -->
+    <button class="btn1" onclick="onlyOneButtonClicked1();">Gaming</button>
+    <button class="btn2" onclick="onlyOneButtonClicked2();">Gaming</button>
+    <button class="btn3" onclick="onlyOneButtonClicked3();">Gaming</button>
+    <script>
+        const btnClicked = document.querySelector('.gaming-btn');
+
+        function gamingBtn(){
+            if(!btnClicked.classList.contains('is-toggled')){
+                btnClicked.classList.add('is-toggled');
+            } else {
+                btnClicked.classList.remove('is-toggled');
+            }
+        }
+
+        function onlyOneButtonClicked1(){
+            const button1 = document.querySelector('.btn1');
+
+            if (!button1.classList.contains('is-toggled')){
+                return button1.classList.add('is-toggled');
+            } else {
+                return button1.classList.remove('is-toggled');
+            }
+        }
+
+        function onlyOneButtonClicked2(){
+            const button2 = document.querySelector('.btn2');
+
+            if (!button2.classList.contains('is-toggled')){
+                return button2.classList.add('is-toggled');
+            } else {
+                return button2.classList.remove('is-toggled');
+            }
+        }
+
+        function onlyOneButtonClicked3(){
+            const button3 = document.querySelector('.btn3');
+
+            if (!button3.classList.contains('is-toggled')){
+                return button3.classList.add('is-toggled');
+            } else {
+                return button3.classList.remove('is-toggled');
+            }
+        }
+
+    </script>
+</body>
+</html>

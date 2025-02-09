@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn" onclick="change();">9a</button>
+    <script>
+        const button = document.querySelector('.btn');
+        console.log(button);
+
+        function change(){
+            document.querySelector('.btn').innerText = '9b done!';
+        };
+    </script>
+</body>
+</html>

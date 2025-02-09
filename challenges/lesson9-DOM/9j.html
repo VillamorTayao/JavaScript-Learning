@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <p class="result">Calculator</p>
+    <p>
+        <button onclick="calculate('1');" onkeyup="enteredValue();">1</button>
+        <button onclick="calculate('2');">2</button>
+        <button onclick="calculate('3');">3</button>
+        <button onclick="calculate(' + ');">+</button>
+    </p>
+
+    <p>
+        <button onclick="calculate('4');">4</button>
+        <button onclick="calculate('5');">5</button>
+        <button onclick="calculate('6');">6</button>
+        <button onclick="calculate(' - ');">-</button>
+    </p>
+
+    <p>
+        <button onclick="calculate('7');">7</button>
+        <button onclick="calculate('8');">8</button>
+        <button onclick="calculate('9');">9</button>
+        <button onclick="calculate(' * ');">*</button>
+    </p>
+
+    <p>
+        <button onclick="calculate('0');">0</button>
+        <button onclick="calculate('.');">.</button>
+        <button onclick="showResult();">=</button>
+        <button onclick="calculate(' / ');">/</button>
+    </p>
+
+    <p>
+        <button onclick="calculation = ' '; enteredValue();">Clear</button>
+    </p>
+
+    <script>
+        // 8h => put the values from calculation variable into localstorage
+        let calculation = localStorage.getItem('calcu') || '';
+
+        function calculate(number){
+            calculation += number;
+            console.log(calculation);
+
+            enteredValue();
+        }
+
+        function showResult(){
+            calculation = eval(calculation);
+            console.log(calculation);
+
+            enteredValue();
+
+            localStorage.setItem('calcu', calculation);
+        }
+
+        function enteredValue(){
+            document.querySelector('.result').innerHTML = calculation;
+        }
+
+    </script>
+</body>
+</html>

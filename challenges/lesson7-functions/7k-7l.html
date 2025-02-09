@@ -1,0 +1,69 @@
+<!-- Cart Quantity but with added changes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+<body>
+    <p>Cart Quantity</p>
+    <button onclick="console.log(`Cart Quantity: ${cartQuantity }`);">Show Quantity</button>
+    <button onclick="updateCartQuantity(1);">Add to Cart</button>
+    <button onclick="updateCartQuantity(2);">+2</button>
+    <button onclick="updateCartQuantity(3);">+3</button>
+    <button onclick="updateCartQuantity(4);">+4</button>
+    <button onclick="updateCartQuantity(5);">+5</button>
+    <button onclick="updateCartQuantity('reset')">Reset Cart</button>
+    <button onclick="removeFromCart(-1);">Remove from Cart</button>
+    <button onclick="removeFromCart(-2);">-2</button>
+    <button onclick="removeFromCart(-3);">-3</button>
+
+    <script>
+        let cartQuantity = 0;
+
+        function updateCartQuantity(number){
+            if (cartQuantity < 10) {
+                if (number === 1){
+                    cartQuantity ++;
+                } else if (number === 2) {
+                    cartQuantity +=2;
+                } else if (number === 3) {
+                    cartQuantity +=3;
+                } else if (number === 4) {
+                    cartQuantity +=4;
+                } else if (number === 5) {
+                    cartQuantity +=5;
+                } else if (number === 'reset'){
+                    console.log('Cart Reset');
+                    cartQuantity  = 0;
+                }
+            } else {
+                alert('Cart is Full!');
+                return;
+            }
+
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }
+
+        function removeFromCart(number){
+
+            if (cartQuantity > 0) {
+                if (number === -1) {
+                    cartQuantity--;
+                } else if (number === -2) {
+                    cartQuantity-=2;
+                } else if (number === -3) {
+                    cartQuantity-=3;
+                }
+            } else {
+                alert('Cart is already empty!');
+                return;
+            }
+
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }
+    </script>
+</body>
+</html>

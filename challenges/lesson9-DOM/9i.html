@@ -1,0 +1,85 @@
+<!-- Cart Quantity but with added changes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+<body>
+    <p>Cart Quantity</p>
+    <button onclick="console.log(`Cart Quantity: ${cartQuantity }`);">Show Quantity</button>
+    <button onclick="updateCartQuantity(1);" onkeyup="enteredValue();">Add to Cart</button>
+    <button onclick="updateCartQuantity(2);" onkeyup="enteredValue();">+2</button>
+    <button onclick="updateCartQuantity(3);" onkeyup="enteredValue();">+3</button>
+    <button onclick="updateCartQuantity(4);" onkeyup="enteredValue();">+4</button>
+    <button onclick="updateCartQuantity(5);" onkeyup="enteredValue();">+5</button>
+    <button onclick="updateCartQuantity('reset')" onkeyup="enteredValue();">Reset Cart</button>
+    <button onclick="removeFromCart(-1);" onkeyup="enteredValue();">Remove from Cart</button>
+    <button onclick="removeFromCart(-2);" onkeyup="enteredValue();">-2</button>
+    <button onclick="removeFromCart(-3);" onkeyup="enteredValue();">-3</button>
+
+    <p>Cart quantity: <span class="result"></span></p>
+
+    <script>
+        let cartQuantity = 0;
+
+        function updateCartQuantity(number){
+
+            if (cartQuantity + number <= 10) {
+                if (number === 1){
+                    cartQuantity ++;
+                    enteredValue(cartQuantity);
+                } else if (number === 2) {
+                    cartQuantity +=2;
+                    enteredValue(cartQuantity);
+                } else if (number === 3) {
+                    cartQuantity +=3;
+                    enteredValue(cartQuantity);
+                } else if (number === 4) {
+                    cartQuantity +=4;
+                    enteredValue(cartQuantity);
+                } else if (number === 5) {
+                    cartQuantity +=5;
+                    enteredValue(cartQuantity);
+                } 
+
+            } else if (number === 'reset'){
+                cartQuantity = 0;
+                enteredValue(cartQuantity);
+            } else {
+                alert('Cart is Full!');
+                return;
+            }
+
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }
+
+        function removeFromCart(number){
+
+            if (cartQuantity + number >= 0) {
+                if (number === -1) {
+                    cartQuantity--;
+                    enteredValue(cartQuantity);
+                } else if (number === -2) {
+                    cartQuantity-=2;
+                    enteredValue(cartQuantity);
+                } else if (number === -3) {
+                    cartQuantity-=3;
+                    enteredValue(cartQuantity);
+                }
+            } else {
+                alert('Cart is already empty!');
+                return;
+            }
+
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }
+
+        function enteredValue(cartQuantity){
+            document.querySelector('.result').innerHTML = `${cartQuantity}`;
+        }
+    </script>
+</body>
+</html>

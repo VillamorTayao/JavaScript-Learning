@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const total = (2095*2 + 799*2) / 100;
+        const shipping = (499 + 499)/100 ;
+        const totalBeforeTax = total + shipping;
+        const tax = Math.round(((total+shipping) * 10)) / 100;
+
+        console.log(`Items(${2+2}): ${total}`)
+
+        console.log(`Shipping & handling: ${shipping}`);
+
+        console.log(`Total before tax: ${total + shipping}`)
+
+        console.log(`Estimated tax (10%): ${tax}`)
+    </script>
+</body>
+</html>

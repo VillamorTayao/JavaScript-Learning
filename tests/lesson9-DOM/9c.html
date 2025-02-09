@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="change('heads');">heads</button>
+    <button onclick="change('tails');">tails</button>
+    <p class="result"></p>
+    <script>
+        function change(move){
+            const result = document.querySelector('.result');
+            if(move === 'heads'){
+                result.innerHTML = `You chose ${move}`;
+            } else if(move === 'tails') {
+                result.innerHTML = `You chose ${move}`;
+            }
+            return result;
+        }
+    </script>
+</body>
+</html>

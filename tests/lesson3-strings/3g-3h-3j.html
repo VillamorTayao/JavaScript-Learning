@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const coffee = 599; // = 5.99
+        const bagel = 295; // = 2.95
+        const total = (coffee + bagel) / 100;
+        const string = 'Total cost: $';
+
+        // using concatenation
+        console.log('Total cost: $' + total);
+
+        // using template string and interpolation
+        console.log(`${string}${total}`);
+
+        // using popup
+        alert(`${string}${total}`);
+
+        // adding another line of text in a popup
+        alert(`${string}${total} \nThank you, come again`);
+    </script>
+</body>
+</html>

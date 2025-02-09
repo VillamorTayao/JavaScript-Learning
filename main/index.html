@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascipt Basics</title>
+</head>
+<body>
+    <p>Todo List</p>
+
+    <p><input type="text">
+      <button>Add</button>
+    </p>
+
+    <p></p>
+    <script>
+      const array = [10, 20, 30, 'hello'];
+      const copyArray = array;
+      array[0] = 20;
+
+
+      console.log(array);
+      console.log(copyArray[3]);
+
+      array.splice(3, 1);
+      console.log(array);
+    </script>
+  </body>
+</html>
